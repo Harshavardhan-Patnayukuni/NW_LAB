@@ -70,7 +70,8 @@
 	
 	addr_size=sizeof(client_addr);
 	
-	while(1) { client_sock=accept(server_sock,(struct sockaddr*)&client_addr,&addr_size);
+	while(1) { 
+	client_sock=accept(server_sock,(struct sockaddr*)&client_addr,&addr_size);
 	
 		printf("client connected\n");
 		
